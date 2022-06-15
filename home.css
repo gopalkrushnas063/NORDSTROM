@@ -1,0 +1,111 @@
+#first{
+    border: 2px solid green;
+    width: 100%;
+    height: 50px;
+}
+#second{
+    border: 3px solid;
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+}
+#second>#sec-sub{
+    width: 95%;
+    height: 40px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#second>#third-sub{
+    border: 1px solid blue;
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+#sec-sub>div{
+    border: 1px solid;
+    width: 8%;
+    height: 20px;
+}
+#fourth-sub{
+    border: 2px solid green;
+    width: 95%;
+    height: 100px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+#fifth-sub{
+    width: 95%;
+    height: 300px;
+    border: 2px solid red;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+#fifth-sub>div{
+    border: 1px solid teal;
+    width: 90%;
+    height: 90%;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+#sixth-sub{
+    width: 95%;
+    height: 350px;
+    border: 2px solid blue;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    
+}
+#sixth-sub>div{
+    width: 70%;
+    height: 95%;
+    border: 1px solid red;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+#seventh-sub{
+    width: 95%;
+    height: 400px;
+    border: 2px solid green;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+#seventh-sub>h3{
+    width: 18%;
+    margin: auto;
+}
+#seventh-sub>h3+p{
+    width: 100%;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+}
+
+#sub-div{
+    width: 98%;
+    height: 300px;
+    display: grid;
+    border: 1px solid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    margin: auto;
+    margin-top: 10px;
+}
+#sub-div>div{
+    border: 1px solid blue;
+    justify-content: space-around;
+}
+
