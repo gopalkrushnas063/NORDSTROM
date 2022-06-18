@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstrom | Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: transparent;
+        }
+
+
+
+        h1 {
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        h1+p{
+            width: 80%;
+            height: 40px;
+        }
+
+        #signup {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+        input {
+            width: 100%;
+            display: block;
+            margin: 15px 0px;
+            font-size: 15px;
+            padding: 2%;
+            border: 1px solid gray;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        form {
+            width: 500px;
+            margin: 1% auto;
+            padding: 3%;
+            background: white;
+        }
+
+        
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <form action="">
+            <h1>Sign In | Create Account</h1>
+            <p>Enter your email to get started.</p>
+            <label for="">Email</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter email">
+
+
+            <p>By tapping Next, you agree to our Privacy Policy and <a href="">Terms of Services</a></p>
+
+            <button id="signup">Next</button>
+            
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+<script>
+
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault()
+        window.location.href = "signup.html";
+
+    })
+
+
+
+
+
+
+</script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstrom | Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(248, 246, 246);
+        }
+
+      
+
+        h1 {
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        h1+p{
+            width: 100%;
+            height: 30px;
+        }
+        h1+p+p{
+            width: 100%;
+            height: 30px;
+        }
+        h1+p+p+p{
+            width: 100%;
+            height: 30px;
+        }
+
+        #signup {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+        input {
+            width: 100%;
+            display: block;
+            margin: 15px 0px;
+            font-size: 15px;
+            padding: 2%;
+            border: 1px solid gray;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        form {
+            width: 500px;
+            margin: 1% auto;
+            padding: 3%;
+            background: transparent;
+            border-radius: 10px;
+        }
+
+        #password+p {
+            width: 100%;
+            height: 40px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #signup+p {
+            width: 100%;
+            height: 40px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="box">
+        <form action="">
+            <h1>Create Account</h1>
+            <p>Check out faster</p>
+            <p>Track orders easily</p>
+            <p>Use one sign-in across our brands</p>
+            <label for="">Full name </label>
+            <br>
+            <input type="text" id="name" placeholder="Enter your full name">
+            <br>
+            <label for="">Email</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter email">
+            <br>
+            <label for="">Enter password</label>
+            <br>
+            <input type="password" name="" id="password" placeholder="Enter password">
+
+            <p>By signining up , I accept the E-Com <a href="">Terms of Services</a> and acknowledge the <a
+                    href="">Privacy Policy</a> </p>
+
+            <button id="signup">Sign Up</button>
+
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    let form = document.querySelector("form");
+    let userData = JSON.parse(localStorage.getItem("userData")) || [];
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let data = {
+            name: form.name.value,
+            email: form.email.value,
+            password: form.password.value,
+        };
+
+        if (checkEmails(data.email) === true) {
+            userData.push(data);
+            localStorage.setItem("userData", JSON.stringify(userData));
+        } else {
+            alert("Account Already Exists");
+        }
+    })
+
+    function checkEmails(email) {
+        let filtered = userData.filter(function (el) {
+            return email === el.email;
+        })
+        if (filtered.length > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+</script>
