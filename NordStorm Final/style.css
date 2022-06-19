@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 14px;
+}
+
+#title>div:first-child {
+    width: 80%;
+    margin-left: 5%;
+}
+
+#title>div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    width: 8%;
+    cursor: pointer;
+}
+
+#title>div:last-child>img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#title>div:first-child>h4 {
+    margin-left: 20%;
+    display: inline-block;
+}
+
+#title>div:first-child>a {
+    color: white;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 16px;
+}
+
+#navbar>div:first-child {
+    text-align: center;
+    margin-left: 33px;
+    cursor: pointer;
+}
+
+#navbar>div:nth-child(2) {
+    width: 50%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar>div:nth-child(2)>img {
+    width: 18px;
+    height: 18px;
+}
+
+#navbar>div:nth-child(2)>input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+#navbar>div:last-child {
+    margin-left: -30px;
+    margin-right: 30px;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+#navbar>div:last-child>div:first-child {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+
+}
+
+#navbar>div:last-child>div {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar>div:last-child>div:first-child img {
+    width: 20px;
+    margin-left: -10px;
+}
+
+#navbar>div:last-child img {
+    width: 25px;
+}
+
+#dropdown {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 15px;
+}
+
+#dropdown>div>p:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#dropdown>div:first-child>p {
+    color: red;
+}
+
+#dropdown>div:first-child>p:hover {
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+}
+.content{
+    display: none;
+    position: absolute;
+    z-index: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: default;
+    width: 285px;
+    padding: 25px;
+}
+.content>div{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content>div>a{
+    text-decoration: none;
+    color: black;
+}
+.content>div>a:hover{
+    color: blue;
+    cursor: pointer;
+}
+.content>div:first-child>a>p{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.content>div:first-child>a>p:hover{
+    background:rgba(0, 0, 0, 0.7);
+    
+}
+
+#navbar>div:last-child>div:first-child:hover .content {
+    display: block;
+    margin-top: 25px;
+    margin-right: -40px;
+}
+.main{
+    text-decoration: none;
+    color: black;
+}

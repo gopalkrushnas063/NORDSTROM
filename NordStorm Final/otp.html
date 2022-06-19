@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .otp>form>h1{
+            color:darkred;
+            animation: myfunction 2s infinite;
+        }
+        @keyframes myfunction{
+            from{
+                color:black;
+            }
+            to{
+                color: red;
+            }
+        }
+        .otp{
+            display: flex;
+            margin: auto;
+            margin-top: 40px;
+            width: 30%;
+            height: 75vh;
+            background-image: url(https://www.fortworthtexas.gov/files/assets/public/hr/images/verification-banner.jpg?dimension=pageimagefullwidth&w=1140);
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        .otp>form{
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        form>input{
+            width: 90%;
+            height: 30px;
+            margin-bottom: 10%;
+        }
+        form>input:last-child{
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: bisque;
+        }
+        form>input:last-child:hover{
+            background-color: magenta;
+            color: white;
+            cursor: pointer;
+        }
+        #dropdown>div>a {
+      text-decoration: none;
+      color: black;
+    }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <div>
+            <h4>Give $150 in Gift Cards, earn a $25 Promo Card!</h4> Ends 6/19. <a href="#">Gift Cards &
+                Restrictions</a>
+        </div>
+        <div><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="flag">
+            <h3>India</h3>
+        </div>
+    </div>
+    <div id="navbar">
+        <div>
+            <a  class="main" href="home.html"><h1>NORDSTORM</h1></a>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS3SsGCqKLccokl5vCOakU4Lb5YItCxASZg&usqp=CAU"
+                alt="logo">
+            <input type="search" placeholder="Search for products or brands">
+        </div>
+        <div>
+            <div>
+                <div>
+                    <p>Sign In</p>
+                </div>
+                <img src="https://icons-for-free.com/download-icon-arrows+bottom+chevron+direction+down+icon-1320085938044424744_512.png"
+                    alt="icon">
+                <div class="content">
+                    <div>
+                        <a href="https:www.google.com"><p>Sign In | Create Account</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Your Account</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Purchases</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Wish List</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>The Nordy Club Rewards</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Shipping Addresses</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Payment Methods</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Looks</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Pay & Manage Nordstrom Card</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Account Settings</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Password & Personal Info</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Email & Mail Preferences</p></a>
+                    </div>
+                    <div>
+                        <a href="https:www.google.com"><p>Stores & Events</p></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="cart.html"><img src="http://cdn.onlinewebfonts.com/svg/img_343947.png" alt="cart"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="dropdown">
+        <div>
+            <p>Sale</p>
+        </div>
+        <div>
+            <a href="women.html"><p>Women</p></a>
+        </div>
+        <div>
+            <a href="men.html"><p>Men</p></a>
+        </div>
+        <div>
+            <p>Kids</p>
+        </div>
+        <div>
+            <p>Young Adult</p>
+        </div>
+        <div>
+            <p>Activewear</p>
+        </div>
+        <div>
+            <p>Home</p>
+        </div>
+        <div>
+            <p>Beauty</p>
+        </div>
+        <div>
+            <p>Designer</p>
+        </div>
+        <div>
+            <p>Gifts</p>
+        </div>
+        <div>
+            <p>Brands</p>
+        </div>
+    </div>
+    </div>
+    <div class="otp">
+        <form>
+            <h1>Verify OTP</h1>
+            <input id="otp" type="number" placeholder="enter otp">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",otpAuth);
+    function otpAuth(){
+        event.preventDefault();
+        let OTP=document.querySelector("#otp").value;
+        if(OTP==1234){
+            alert("otp verified successful")
+            window.location.href="women.html";
+        }else{
+            alert("otp didn't match");
+        }
+    }
+</script>
