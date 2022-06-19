@@ -90,8 +90,8 @@ let cartItem = JSON.parse(localStorage.getItem("cart")) || [];
         }
         document.querySelector("#promo").addEventListener("click", myfunction);
         function myfunction() {
-            document.querySelector("h1").innerHTML = "";
-            let PromoCode = document.querySelector("input").value;
+            document.querySelector("#toTal").innerHTML = "";
+            let PromoCode = document.querySelector(".Promo").value;
             if (PromoCode === "masai30") {
                 totalPrice -= (totalPrice / 100) * 30;
                 alert("promocode applied")

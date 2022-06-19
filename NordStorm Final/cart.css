@@ -32,7 +32,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
+#container>div>h3 {
     color: green;
 }
 

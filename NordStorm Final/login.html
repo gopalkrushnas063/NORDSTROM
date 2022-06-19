@@ -81,7 +81,7 @@
     </div>
     <div id="navbar">
         <div>
-            <a  class="main" href="home.html"><h1>NORDSTORM</h1></a>
+            <a  class="main" href="index.html"><h1>NORDSTORM</h1></a>
         </div>
         <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS3SsGCqKLccokl5vCOakU4Lb5YItCxASZg&usqp=CAU"
@@ -246,7 +246,7 @@
             password: form.password.value
         }
         if (checkSignin(data.email, data.password) === true) {
-            window.location.href = "mens.html";
+            window.location.href = "index.html";
             localStorage.setItem("signin", JSON.stringify(data));
             alert("Sign In Successful")
         } else {

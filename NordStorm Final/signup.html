@@ -102,7 +102,7 @@
     </div>
     <div id="navbar">
         <div>
-            <a  class="main" href="home.html"><h1>NORDSTORM</h1></a>
+            <a  class="main" href="index.html"><h1>NORDSTORM</h1></a>
         </div>
         <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS3SsGCqKLccokl5vCOakU4Lb5YItCxASZg&usqp=CAU"
@@ -280,6 +280,8 @@
         if (checkEmails(data.email) === true) {
             userData.push(data);
             localStorage.setItem("userData", JSON.stringify(userData));
+            alert("signup successful");
+            window.location.href="login.html";
         } else {
             alert("Account Already Exists");
         }
