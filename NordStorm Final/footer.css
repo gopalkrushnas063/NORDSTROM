@@ -1,7 +1,7 @@
 .footer_Div {
   height: 350px;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 90px;
   background-color: rgb(246, 246, 246);
 }
 .footerPDiv {
@@ -12,20 +12,36 @@
 }
 .footerPDiv > div {
   height: 250px;
-  width: 15.5%;
+  width: 16.5%;
 }
 .footerPDiv p {
   font-size: 13px;
+  width: 60%;
+  margin: auto;
 }
 .termsOfService {
   width: 55%;
   height: 50px;
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  margin-top: 50px;
+  margin-top: -40px;
   text-align: center;
-  margin-left: -50px;
+  margin-left: 10px;
 }
 .termsOfService > p {
   font-size: 13px;
+}
+.Sociallinks{
+  width: 40%;
+  height: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+.footerPDiv > div>h5{
+  font-size: 18px;
+  margin: auto;
+}
+.footerPDiv > div:nth-child(2)>h5{
+  width: 50%;
+  margin-left: 25px;
 }

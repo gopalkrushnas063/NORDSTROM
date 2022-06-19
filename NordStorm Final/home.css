@@ -33,10 +33,15 @@
     width: 95%;
     /* height: 40px; */
     margin: auto;
-    margin-top: 0px;
+    margin-top: 10px;
     display: flex;
-    margin-left: 6%;
+    margin-left: 3%;
+    justify-content: center;
     align-items: center;
+}
+#sec-sub>div>p{
+    padding-top: 10px;
+    text-align: center;
 }
 #second>#third-sub{
     border: 1px solid black;
@@ -71,12 +76,13 @@
 }
 #fourth-sub>p:nth-child(3){
     line-height:0%;
+    margin-top: 10px;
 }
 #fourth-sub>p:nth-child(4){
   line-height: 150%;
 }
 #mine>h2{
-    
+    height: 20px;
     line-height: 0%;
 }
 #fifth-sub{
@@ -161,7 +167,7 @@ font-size:15px;;
     height: 35px;
     margin: auto;
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
 }
 #seventh-sub>h3+p+p{
     width: 100%;
@@ -187,7 +193,7 @@ font-size:15px;;
     width:100%;
     height: 80%;
 }
-#sub-div>div>p{
+#sub-div>div>p{margin-top: 10px;
     line-height: 0%;
 }
 #eight{
@@ -317,9 +323,9 @@ font-size:15px;;
 }
 #cont>div:nth-child(2){
     display:grid;
-    grid-template-columns: repeat(5,100px);
-    column-gap: 60px;
-    margin-left: 20px;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 90px;
+    margin-left: 100px;
 }
 #cont>div:nth-child(2)>p:first-child:hover{
     text-decoration:underline;
@@ -400,4 +406,11 @@ font-weight: bold;
 a{
     color: black;
     text-decoration: none;
+}
+#ninth>div:nth-child(2)>p{
+    height: 50px;
+}
+#cont>h2{
+    margin-left: 50px;
+    margin-top: 20px;
 }
