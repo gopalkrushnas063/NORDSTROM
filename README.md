@@ -1,4 +1,4 @@
-# Nordstrom Rack-Clone :
+# Nordstrom.com Clone :
 
 Project Code : entertaining-snails-6673
 
@@ -42,17 +42,17 @@ TeachStack used
   <hr>
   
   Navbar Part :
-  ![image](https://user-images.githubusercontent.com/103574856/186971634-511f9813-fdd9-439f-bfdf-c65d8f087739.png)
+  ![image](https://user-images.githubusercontent.com/103574856/197345107-b2a35a08-7d9f-484e-9fb9-60b828292b97.png)
   
   
   
   Create Account :
-  ![image](https://user-images.githubusercontent.com/103574856/186972005-d65705d8-a4ce-482b-89b9-4b4abee9c445.png)
+  ![image](https://user-images.githubusercontent.com/103574856/197345157-e86a3635-d91f-47c2-8387-07333d8fd3f7.png)
 
 
   
   User Login :
-  ![image](https://user-images.githubusercontent.com/103574856/186972304-fb6d3fba-56f3-4401-b745-969b8b64b700.png)
+  ![image](https://user-images.githubusercontent.com/103574856/197345187-844d42ad-de6b-4794-8c63-adf66ed91bcb.png)
 
   
   
